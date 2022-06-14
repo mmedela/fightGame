@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="topInterface">
+                <div class="healthBarContainer" style="display: flex; justify-content: flex-end;">
+                    <div   class="healthBarBack player1Bar"></div>
+                    <div id="player1Health" class="healthBarFront player1Bar" style="width: 100%;"></div>
+                </div>
+                <div class="timer" id="timer">10</div>
+                <div class="healthBarContainer">
+                    <div   class="player2Bar healthBarBack"></div>
+                    <div id="player2Health" class="player2Bar healthBarFront" style="left: 0;"></div>
+                </div>
+            </div>
+            <div id='gameOverMessage' class="gameOverMessage"></div>
+            <canvas></canvas>
+        </div>
+        
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
